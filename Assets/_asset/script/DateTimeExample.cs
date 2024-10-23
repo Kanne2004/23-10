@@ -12,7 +12,7 @@ public class DateTimeExample : MonoBehaviour
     void Start()
     {
         now = DateTime.Now; //ngay, gio hien tai
-        specificDate = new DateTime(2024, 10, 25); //ngay cu the, mac dinh 0h 
+        specificDate = new DateTime(2024, 10, 23); //ngay cu the, mac dinh 0h 
         Debug.Log("Ngay va gio hien tai: " + now);
         Debug.Log("Ngay cu the: " + specificDate);
 
@@ -26,6 +26,11 @@ public class DateTimeExample : MonoBehaviour
 
         //dinh dang thu ngay thang cu the
         Debug.Log("Ngay hien tai (String): " + now.ToString("dd-MM-yyyy"));
+
+        //thoi gian tu hqua toi hnay
+        TimeSpan a = now - specificDate;
+        //Double A = a.TotalDays;
+        Debug.Log(a);
     }
 
     // Update is called once per frame

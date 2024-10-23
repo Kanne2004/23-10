@@ -21,8 +21,8 @@ public class TimeSpanExample : MonoBehaviour
         //tuong tu Minutes, Seconds
 
 
-        Double tongPhut = duration.TotalMinutes; //quy doi gio ra phut
-        Double tongGiay = duration.TotalSeconds; //quy doi gio ra giay
+        Double tongPhut = duration.TotalMinutes; //quy doi ra phut
+        Double tongGiay = duration.TotalSeconds; //quy doi ra giay
         //tuong tu hour, day,...
         Debug.Log($"Tong phut sau quy doi: {tongPhut} phut");
         Debug.Log($"Tong giay sau quy doi: {tongGiay}s");
