@@ -28,9 +28,9 @@ public class ImplicitCastingExample : MonoBehaviour
         strNum = "123.456";
         floatNum = float.Parse(strNum);// chuyen tu string qua float
         Debug.Log("Parsed (float) Number: " + floatNum);
-
+        
         strNum = "123.45";
-        floatNum = Convert.ToSingle(strNum); // Converting string to float
+        floatNum = Convert.ToSingle(strNum); // giong parse
         Debug.Log("Converted Float Number: " + floatNum);
 
     }
